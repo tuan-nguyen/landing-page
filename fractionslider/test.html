@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<html>
+	<head>
+		<meta name="author" content="Mario Jäckle">
+		
+		<!-- <link rel="stylesheet" href="css/reset.css" type="text/css"   charset="utf-8" /> -->
+		<!-- <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" /> -->
+		<link rel="stylesheet" href="css/fractionslider.css">
+		
+		<script src="jquery-1.9.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="jquery.fractionslider.js" type="text/javascript" charset="utf-8"></script>
+		
+		<!-- <script src="js/main.js" type="text/javascript" charset="utf-8"></script> -->
+		
+	</head>
+	<body>
+		<div class="slider-wrapper" style="width:1600px;height:590px;background:url(../pics/background.jpg) no-repeat;">
+			<div class="slider" style="width:1000px;height:520px;margin: 0 auto;padding-top:70px;">
+				<div class="fs_loader"></div>
+				<div class="slide">
+					<img src="../pics/ban2-frame1.png" width="1000px" height="407px"			
+							data-position="111,0" data-in="fade" data-delay="500" data-out="fade">
+					<img src="../pics/ban2-frame2.png" width="163px" height="160px"			
+							data-position="210,30" data-in="fade" data-delay="2500" data-out="fade">
+					<img src="../pics/ban2-frame3.png" width="420px" height="110px"			
+							data-position="0,800" data-in="top" data-delay="1500" data-out="top">
+				</div>
+				<div class="slide">
+					<img src="../pics/ban4-frame1.png" width="1000px" height="519px"			
+							data-position="0,0" data-in="top" data-delay="500" data-out="top">
+					<img src="../pics/ban4-frame2.png" width="1000px" height="228px"			
+							data-position="50, 200" data-in="fade" data-delay="1500" data-out="fade">
+					<img src="../pics/ban4-frame3.png" width="1000px" height="327px"			
+							data-position="190,0" data-in="fade" data-delay="2500" data-out="fade">
+				</div>							
+				<div class="slide">
+					<img src="../pics/ban5-frame1.png" width="1000px" height="100px"			
+							data-position="192,0" data-in="left" data-delay="500" data-out="right">
+					<img src="../pics/ban5-frame2.png" width="190px" height="160px"			
+							data-position="0,840" data-in="top" data-delay="1500" data-out="top">
+					<img src="../pics/ban5-frame3.png" width="509px" height="115px"			
+							data-position="330,180" data-in="fade" data-delay="2500" data-out="fade">
+				</div>					
+			</div>
+		</div>
+		
+		<script>
+			 $('.slider').fractionSlider({
+				'fullWidth': 			true,
+				'controls': 			true, 
+				'pager': 				true,
+				'responsive': 			true,
+				'dimensions': 			"1000,400",
+				'increase': 			false,
+				'pauseOnHover': 		true,
+				'slideEndAnimation': 	false
+			});
+		</script>
+	</body>
+</html>

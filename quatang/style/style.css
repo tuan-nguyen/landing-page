@@ -1,0 +1,211 @@
+@font-face {
+	font-family: 'Gotham';
+	src: url('GothamNarrow-Medium.otf' );
+}
+@font-face {
+	font-family: 'Gotham-Light';
+	src: url('GothamNarrow-Light.otf' );
+}
+@font-face {
+	font-family: 'Gotham-Bold';
+	src: url('GothamNarrow-Bold.otf' );
+}
+@font-face {
+	font-family: 'GuardianEgyp';
+	src: url('GuardianEgyp.otf' );
+}
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, del, dfn, em, img, ins, kbd, q, samp, small, strong, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, footer, header, nav, section {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+html{width: 100%;background:#FFF; margin:0; padding:0;}
+body{ width: 100%;background:#FFF; margin:0; padding:0; font-family: "Gotham", serif; background:url(./background-code.jpg)bottom left;display:inline-block;min-height:800px;}
+a{ text-decoration: none;}
+.center{
+	width: 1000px;
+	margin: 0 auto;
+}
+.fontGothamLight{ font-family: 'Gotham-Light';}
+.fontGothamBold{ font-family: 'Gotham-Bold';}
+#header{
+	width:100%;
+	height: 70px;	
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	margin-top:5px;
+	color: #444444;
+}
+#header .menu{
+	width:700px;
+	height:70px;
+	float: left;
+	padding: 25px 0 0 40px;
+	z-index:1;
+	position: absolute;
+	margin-left:175px;
+}
+#header .logo{
+	/* padding: 14px 50px 15px 25px; */
+	width: 168px;
+	float: left;	
+	margin-right: 22px;
+}
+#header .logo >img{
+	width: 100%;
+}
+#header .title{
+	width: 689px;
+	height: 120px;
+	position: absolute;
+	background: url(./free.png) no-repeat;
+	margin: 20px 0 0 200px;
+}
+
+#wrapper{
+	width:100%;
+	margin-top: 100px;
+}
+#col1{
+	float: left;
+	width: 360px;
+	margin-left: 20px;
+	position: absolute;
+}
+#col2{
+	float: left;
+	width: 312px;
+	height:540px;
+	background:url(./5sgold.png);
+	position: absolute;
+	margin-left: 370px;
+}
+#col3{
+	float: left;
+	width: 340px;
+	position: absolute;
+	margin-left: 660px;
+}
+.step{
+	margin-bottom: 20px;
+	cursor: pointer;
+	height: 190px;
+	padding: 10px 17px;
+	position: relative;
+}
+.step:hover .content-number{
+	color: #fff;
+	background-color: #026258;
+	border: solid 2px transparent;
+}
+.content-number{
+	font-size: 28px;
+	font-weight: bold;
+	color: #666666;
+	width: 56px;
+	height: 56px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	background: none;
+	text-align: center;
+	line-height: 56px;
+	border: solid 2px #999999;
+	position: relative;
+	z-index: 1;
+}
+
+.content-intro{
+	margin-top:10px;
+	font-size: 30px;
+	line-height: 37px;
+	color: #026258;	
+}
+.borderBottom{
+	border-bottom: 2px dashed #026528;
+	display: inline-block;
+}
+.content-instruction{
+	font-size: 20px;
+	line-height: 30px;	
+	margin-top: 10px;
+}
+.content-active{
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	background-color: #fff;
+	-webkit-box-shadow: 0 5px 16px rgba(0,0,0,0.08);
+	-moz-box-shadow: 0 5px 16px rgba(0,0,0,0.08);
+	box-shadow: 0 5px 16px rgba(0,0,0,0.08);
+	border: solid 1px #d4d4d4;
+}
+.content-active .content-number{
+	color: #fff;
+	background-color: #94080c;
+	border: solid 2px transparent;
+}
+.content-active .content-intro{
+	color: #94080c;
+}
+.content-active .content-intro .borderBottom{
+	border-bottom: 2px dashed #94080c;
+}
+.box-triangle{
+	position: absolute;
+	top: 20px;
+	right: -3px;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.box-figure{
+	position: absolute;
+	margin: 0 auto;
+	width: 21px;
+	height: 21px;
+	top: 15px;
+	left: 6px;
+	border-color: #d4d4d4;
+	border-style: solid;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	border-width: 0px 1px 1px 0;
+	-webkit-box-shadow: 5px 5px 0px rgba(0,0,0,0.08);
+	-moz-box-shadow: 5px 5px 0px rgba(0,0,0,0.08);
+	box-shadow: 0 5px 16px rgba(0,0,0,0.08);
+	background: #fff;
+}
+.box-spacer{
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	background: #fff;
+	top: 12px;
+	right: -5px;
+}
+.rightCol{
+	top: 50px;
+	left: -5px;
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+#step4{ height: 210px;}

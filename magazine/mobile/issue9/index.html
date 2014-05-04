@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html  xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="author" content="Forbes Vietnam">
+	<meta name="description" content="">	
+	<title>Forbes Vietnam magazine</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0">
+	<!-- Force latest IE rendering engine & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<!-- Make IE recognise HTML5 elements for styling -->
+	<!--[if lte IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	
+	<link rel="icon" type="image/png" href="images/favicon.png" />
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	<link rel="stylesheet" href="../css/idangerous.swiper.css">	
+	<link rel="stylesheet" href="../css/style.css">	
+	<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+	<script defer src="../js/idangerous.swiper.js"></script>
+	<script type="text/javascript">
+		function changePage(swiper){
+			i = mySwiper.slides.length;
+			if(mySwiper.activeIndex == i-2){
+				var insertIndex = i + 4;
+				if( insertIndex > maxImageIndex ) insertIndex = maxImageIndex;
+				for( j = i+1; j <= insertIndex; j++){
+					newSlide = mySwiper.createSlide('<img src="http://forbesvietnam.com/magazine/magazine/issue8/pages/'+j+'.jpg" />');
+					newSlide.append(); // - new slide will be added as the last slide of slider after all existing slides
+				}
+			}
+		}
+		$(function(){
+			maxImageIndex = 22;
+
+			mySwiper = $('.swiper-container').swiper({
+				//Your options here:
+				mode:'horizontal',
+				keyboardControl: true,
+				speed : 400, //Set animation duration to 500ms
+				loop: false
+			});
+			mySwiper.addCallback('SlideNext', changePage);
+			
+		});
+		
+	</script>
+</head>
+
+<body>
+		<div  id="container" class="container">
+			<div class='head'><h2> Forbes Việt Nam tháng 04.2014</h2></div>		
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+				
+					<div class="swiper-slide"> 
+						<img src="http://forbesvietnam.com/magazine/magazine/issue8/pages/1.jpg"/>
+					</div>
+					<div class="swiper-slide">
+						<img src="http://forbesvietnam.com/magazine/magazine/issue8/pages/2.jpg"/>
+					</div>				
+					<div class="swiper-slide"> 
+						<img src="http://forbesvietnam.com/magazine/magazine/issue8/pages/3.jpg"/>
+					</div>		
+					<div class="swiper-slide"> 
+						<img src="http://forbesvietnam.com/magazine/magazine/issue8/pages/4.jpg" />			
+					</div>		
+					<div class="swiper-slide"> 
+						<img src="http://forbesvietnam.com/magazine/magazine/issue8/pages/5.jpg" />			
+					</div>	
+					
+				</div>
+			</div>
+		</div>	
+</body>
+</html>

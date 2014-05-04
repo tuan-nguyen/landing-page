@@ -1,0 +1,142 @@
+html,body {
+	height: 100%;
+	width: 100%;
+	margin:0;
+	padding:0;
+}
+body{
+
+}
+#wrapper{
+	width: 100%;
+	height: 80%;
+	max-width: 520px;
+	margin: 10px auto;	
+}
+#header{
+	width: 100%;
+	margin: 10px auto;
+	display: block;
+}
+#bookshelf{
+	width: 100%;
+	height: 70%;
+	max-width: 450px;
+	margin: 0 auto;
+}
+
+#footer{
+	display: none;
+	height: 20%;
+	width: 100%;
+}
+@media screen and (orientation: landscape){
+	#header{
+		float: left;	
+		width: 30%;
+		height: 100%;
+		margin-top: 120px;
+	}
+	#bookshelf{
+		float: left;	
+		width: 65%;
+		height: 100%;
+		padding-left: 5%;
+	}
+	#header >img{
+		width: 100%;
+	}
+	.popup{ 
+		position: absolute;
+	}
+}
+
+
+#bookshelf .row-1{
+	position:relative;
+	width:360px;
+	height:158px;
+	margin-left: 10%;
+	
+}
+#bookshelf .shelf{
+	background:url(../pics/wall-bookshelf.jpg);
+	background-size:100%;
+	background-repeat: no-repeat;
+	display:block;
+	content:"";
+	width:100%;
+	height:30px;
+	margin-top: -20px;
+	padding-bottom: 10px;
+}	
+.sample{
+	width:114px;
+	height:150px;
+	background-size: 100%;
+	float:left;	
+	box-shadow: 5px 0 5px #333333;
+}
+.issue8{
+	background-image:url(../magazine/issue8/pics/cover-mobile.jpg);
+}
+.issue7{
+	background-image:url(../magazine/issue7/pics/cover_mobile.jpg);
+	margin-left: 20px;
+}
+.issue6{
+	background-image:url(../magazine/issue6/pics/cover_mobile.jpg);
+}
+.issue5{
+	background-image:url(../magazine/issue5/pics/cover_mobile.jpg);
+	margin-left: 20px;
+}
+.issue4{
+	background-image:url(../magazine/issue4/pics/cover_mobile.jpg);
+}
+.issue3{
+	background-image:url(../magazine/issue3/pics/cover_mobile.jpg);
+	margin-left: 20px;
+}
+.issue2{
+	background-image:url(../magazine/issue2/pics/cover_mobile.jpg);
+}
+.issue1{
+	background-image:url(../magazine/issue1/pics/cover_mobile.jpg);
+	margin-left: 20px;
+}
+
+.popup{ 
+    position: fixed; 
+    background: white; 
+    border: 1px solid gray; 
+    z-index: 10000; 
+    box-shadow: 3px 3px gray; 
+} 
+#background{ 
+    position: absolute; 
+    background: gray; 
+    left: 0px; 
+    top: 0px; 
+} 
+a.close{ 
+    text-decoration: none; 
+    float: right; 
+} 
+*{ padding:0px; margin:0px;}
+.clear{ clear:both;}
+.fLeft{ float: left}
+.padL5{ padding-left: 5%}
+.padL25{ padding-left: 25%}
+.padT5{ padding-top: 5%}
+.padT25{ padding-top: 25%}
+.padR5{ padding-right: 5%}
+.f-12{font-size:1.2em;}
+.f-13{font-size:1.3em;}
+.f-14{font-size:1.4em;}
+.f-15{font-size:1.5em;}
+.f-16{font-size:1.6em;}
+.f-17{font-size:1.7em;}
+.f-18{font-size:1.8em;}
+.f-19{font-size:1.9em;}
+.f-20{font-size:2.0em;}

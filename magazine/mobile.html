@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="format-detection=no,initial-scale=1.0,maximum-scale=1.0,user-scalable=0,width=device-width" />
+    <meta name="apple-touch-fullscreen" content="YES" />
+		<meta name="description" content="Đọc tạp chí Forbes Việt Nam Online. Cập nhật những bài viết mới nhất ngay trên website."/>
+		<meta name="keywords" content="website forbes vietnam, đọc forbes việt nam, forbes online, forbes vietnam magazine"/>
+
+	<title>
+			Forbes Vietnam - Read Magazine
+	</title>	
+	<link type="text/css" rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./resources/jquery.mobile-1.3.2.min.css">
+    <script src="./resources/jquery-1.9.1.min.js"></script>
+    <script src="./resources/jquery.mobile-1.3.2.min.js"></script>	
+    <script src="./js/swipe.js"></script>
+	
+	<style>
+
+	/* Swipe 2 required styles */
+
+	.swipe {
+	  overflow: hidden;
+	  visibility: hidden;
+	  position: relative;
+	}
+	.swipe-wrap {
+	  overflow: hidden;
+	  position: relative;
+	}
+	.swipe-wrap > div {
+	  float:left;
+	  width:100%;
+	  position: relative;
+	}
+
+	/* END required styles */
+	</style>
+</head>
+<body>   
+
+	<div id="wrapper">
+        <div id="header" align="center">
+            <img src="./pics/logo.jpg" >
+        </div>
+        <div id="bookshelf">
+			<div class="row-1">   
+                <a href="./mobile/issue8/"><div class="sample issue8" sample="issue1"></div></a>  
+                <a href="./mobile/issue7/"><div class="sample issue7" sample="issue2"></div></a>       
+            </div>	
+            <div class="shelf"></div>
+            <div class="row-1">
+                <a href="./mobile/issue6/"><div class="sample issue6" sample="issue1"></div></a>
+                <a href="./mobile/issue5/"><div class="sample issue5" sample="issue2"></div></a>            
+            </div>	
+            <div class="shelf"></div>
+            <div class="row-1">
+                <a href="./mobile/issue4/"><div class="sample issue4" sample="issue1"></div></a>
+                <a href="./mobile/issue3/"><div class="sample issue3" sample="issue2"></div></a>           
+            </div>	
+            <div class="shelf"></div>
+            <div class="row-1">
+                <a href="./mobile/issue2/"><div class="sample issue2" sample="issue1"></div></a>
+                <a href="./mobile/issue1/"><div class="sample issue1" sample="issue2"></div></a>            
+            </div>	
+            <div class="shelf"></div>
+        </div>	
+    </div>
+	<div id="footer" >
+		A production of <a href="http://forbesvietnam.com" target="_blank">Forbes Vietnam</a>
+	</div>
+
+<script>
+$(document).ready(function() { 
+	$(window).resize( function(){
+		if($("#popup").css("display")=="none"){
+			return;
+		}
+	});
+}); 
+function checkLandscape(){
+	var height = $(window).height();
+	var width = $(window).width();
+	if(width>height) {
+		return true;
+	}else{
+		return false;
+	}
+}
+
+$(function(){
+	/*
+	// Bind the swiperightHandler callback function to the swipe event on div.box
+	$( "div.page" ).on( "swipeleft", swipeleftHandler );
+	$( "div.page" ).on( "swiperight", swiperightHandler );
+	$( "div.issue1" ).bind( "tap", tapHandler );
+	// Callback function references the event target and adds the 'swiperight' class to it
+	function swiperightHandler( event ){
+		prev();
+	}
+	function swipeleftHandler( event ){
+		next();
+	}
+	function tapHandler( event ){
+		//openPopup();
+		window.location = './mobile/issue1/';
+	}*/
+});
+</script>
+</body>
+</html>
