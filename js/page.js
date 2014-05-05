@@ -1,14 +1,31 @@
-$(window).load(function(){	
-/* 		$('.lineone ').delay(1000).fadeIn(2000);
-		$('.lineone').delay(1000).animate({top: '0'}, 2000);
-		$('.linetwo ').delay(1500).fadeIn(2000);
-		$('.linetwo').delay(1500).animate({top: '0'}, 1500, 'easeOutQuart');
-		$('.linethree ').delay(2000).fadeIn(2000);
-		$('.linethree').delay(2000).animate({top: '0'}, 1500, 'easeOutQuart'); */
-				
+$(window).load(function(){
+
 });
 
 $(document).ready(function(){
+	$('.slider').fractionSlider({
+		'fullWidth': 			true,
+		'controls': 			true,
+		'responsive': 			false,
+		'dimensions': 			"1000,520",
+		'increase': 			false,
+		'pauseOnHover': 		true,
+		'slideEndAnimation': 	true
+	});
+	$('#nav').onePageNav({
+		currentClass: 'actedTab'
+	});
+	$('#gallery').jqFancyTransitions({ 
+		width: 1000, 
+		height: 350,
+		navigation: true,
+		effect: 'wave'
+	});
+	$('#news').anythingSlider({
+		stopAtEnd: false,
+		autoPlay: true,
+		hashTags:false
+	});
 	var banner = 0;
 	$('.left2000 ').css('left',-2000);
 	mapIframe = '<iframe width="480" height="310" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=vi&amp;geocode=&amp;q=Vincom+B,+L%C3%AA+Th%C3%A1nh+T%C3%B4n,+Vincom+Center+Shopping+Mall,+B%E1%BA%BFn+Ngh%C3%A9,+Qu%E1%BA%ADn+1,+Ho+Chi+Minh+City,+Vi%E1%BB%87t+Nam&amp;sll=37.0625,-95.677068&amp;sspn=42.716829,79.013672&amp;ie=UTF8&amp;split=0&amp;hq=&amp;hnear=Vincom+B,+L%C3%AA+Th%C3%A1nh+T%C3%B4n,+B%E1%BA%BFn+Ngh%C3%A9,+Qu%E1%BA%ADn+1,+Ho+Chi+Minh+City,+Vi%E1%BB%87t+Nam&amp;t=m&amp;ll=10.778421,106.702244&amp;spn=0.006535,0.010278&amp;z=16&iwloc=near&amp;output=embed"></iframe>';
@@ -211,7 +228,15 @@ $(document).ready(function(){
 			$(".y2014").hide();
 		}
 	}); 
-
+	$("#slide1").click(function () {          
+		window.open('http://forbesvietnam.com/business-forum/application/?lang=vi','_blank');
+	}); 
+	$("#slide2").click(function () {               
+		window.open('./forbespass/?utm_source=banner-landingpage&utm_medium=banner-landingpage&utm_campaign=banner-landingpage','_blank');
+	});
+	$("#slide3").click(function () {               
+		window.open('http://forbesvietnam.com/business-forum/application/?lang=en','_blank');
+	});
 });
 function menuOver(menu, flag){
 	imgSrc = './pics/icon'+flag+'-hover.png';
