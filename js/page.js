@@ -229,13 +229,13 @@ $(document).ready(function(){
 		}
 	}); 
 	$("#slide1").click(function () {          
-		window.open('http://sukien.forbesvietnam.com/business-forum/application/?lang=vi','_blank');
+		window.open('http://event.forbesvietnam.com/business-forum/application/?lang=vi','_blank');
 	}); 
 	$("#slide2").click(function () {               
 		window.open('./forbespass/?utm_source=banner-landingpage&utm_medium=banner-landingpage&utm_campaign=banner-landingpage','_blank');
 	});
 	$("#slide3").click(function () {               
-		window.open('http://sukien.forbesvietnam.com/business-forum/application/?lang=en','_blank');
+		window.open('http://event.forbesvietnam.com/business-forum/application/?lang=en','_blank');
 	});
 });
 function menuOver(menu, flag){
