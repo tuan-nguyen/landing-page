@@ -3,6 +3,9 @@ $(window).load(function(){
 });
 
 $(document).ready(function(){
+	$(".popup").click(function(){
+		$(".popup").hide();
+	});
 	$('.slider').fractionSlider({
 		'fullWidth': 			true,
 		'controls': 			true,
@@ -236,6 +239,9 @@ $(document).ready(function(){
 	});
 	$("#slide3").click(function () {               
 		window.open('http://event.forbesvietnam.com/business-forum/application/?lang=en','_blank');
+	});
+	$("#slide4").click(function () {               
+		window.open('./forbespass/?utm_source=banner-landingpage&utm_medium=banner-landingpage&utm_campaign=banner-landingpage','_blank');
 	});
 });
 function menuOver(menu, flag){
